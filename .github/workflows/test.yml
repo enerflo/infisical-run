@@ -1,0 +1,20 @@
+name: Test
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      INFISICAL_CLIENT_ID: ${{ secrets.INFISICAL_CLIENT_ID }}
+      INFISICAL_CLIENT_SECRET: ${{ secrets.INFISICAL_CLIENT_SECRET }}
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Install infisical CLI
+      run: ./.github/install-infisical.sh
+
+    - name: Run test
+      run: ./run-test.sh

@@ -1,0 +1,6 @@
+{
+  "name": "@enerflo/infisical-run",
+  "version": "1.0.0",
+  "private": true,
+  "bin": "./infisical-run.sh"
+}
