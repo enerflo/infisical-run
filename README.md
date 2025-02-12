@@ -53,4 +53,14 @@ cases, or use some other method of setting them.
 
 ## Using the script from another repo
 
-TODO
+Install the package as a dev dependency:
+
+```sh
+yarn add --dev @enerflo/infisical-run@git+https://github.com/enerflo/infisical-run#v1.0.0
+```
+
+Then invoke it using `npx`:
+
+```sh
+npx infisical-run -- some-command
+```
