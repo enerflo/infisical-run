@@ -51,6 +51,13 @@ may want to run using the script. Note, however, than variables set this way wil
 into Docker container environments naturally and you may need to set then in a `.env` file in these
 cases, or use some other method of setting them.
 
+If you're running MacOS then your pre-installed version of bash is from 2007 and is too old to be
+supported. You will need to upgrade your bash to a current version using Homebrew.
+
+```
+brew install bash
+```
+
 ## Using the script from another repo
 
 Install the package as a dev dependency:
