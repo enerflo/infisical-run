@@ -1,0 +1,19 @@
+name: Publish NPM Package
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: [self-hosted, big]
+    steps:
+      - name: Setup
+        uses: enerflo/node-preamble@v1
+        with:
+          install: false
+
+      - name: Publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm publish

@@ -1,6 +1,12 @@
 {
   "name": "@enerflo/infisical-run",
   "version": "1.0.0",
-  "private": true,
+  "repository": "https://github.com/enerflo/infisical-run.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "infisical-run.sh"
+  ],
   "bin": "./infisical-run.sh"
 }
