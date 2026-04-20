@@ -3,7 +3,7 @@
 # Run a command after loading the environment from the Infisical secrets manager and other sources.
 # See the usage text below for documentation.
 
-version="1.0.0"
+version="1.0.1"
 
 set -e -o pipefail
 
@@ -335,4 +335,4 @@ if [ -z "$no_keep_shell_env" ]; then
 fi
 
 debug "loading complete, launching command"
-exec $@
+exec "$@"
